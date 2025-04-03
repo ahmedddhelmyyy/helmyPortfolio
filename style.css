@@ -517,66 +517,70 @@ height:100%;
 
 
 /*========================================================*/
-
-  @media (max-width:1023px){
-    header{
-        padding: 12px 20px;
-    }
-
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-    .section{
-        padding: 80px 20px;
-    }
-
-.main-content h2{
-    font-size: 1em;
-}
-
-.main-content h3{
-    font-size: 1.6em;
-}
-
-
-.content{
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
     flex-direction: column;
-    align-items: center;
-
-}
+    align-items: flex-start;
   }
 
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
+  section {
+    padding: 80px 30px;
+  }
 
-  @media (max-width:641px){
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+    gap: 30px;
+  }
 
-body{
+  .card,
+  .project-card {
+    flex: 0 1 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
     font-size: 12px;
+  }
 
-}
+  .logo {
+    font-size: 1.2em;
+  }
 
-.main-content h2{
-    font-size: 0.8em;
-}
+  .navigation a {
+    padding-left: 10px;
+    font-size: 0.9em;
+  }
 
-.main-content h3{
+  .main h2 {
+    font-size: 1em;
+  }
+
+  .main h3 {
     font-size: 1.4em;
-}
   }
 
+  .main-btn {
+    width: 100%;
+  }
+}
 
-  @media(max-width:300px){
-body{
+@media (max-width: 300px) {
+  body {
     font-size: 10px;
-}
-
-
-
   }
+}
 /* note */
   /* default
   1em =16px*/
